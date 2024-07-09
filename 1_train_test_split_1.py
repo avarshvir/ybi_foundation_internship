@@ -7,12 +7,12 @@ salary = pd.read_csv('https://github.com/YBIFoundation/Dataset/raw/main/Salary%2
 # Display the first few rows of the dataset
 print("Salary Head \n",salary.head())
 
+#columns
+print("Columns \n",salary.columns)
+
 # Separate the features (X) and target variable (y)
 y = salary['Salary']
 X = salary[['Experience Years']]
-
-#columns
-print("Columns \n",salary.columns)
 
 # Print shapes of the dataset to verify
 print("Shape \n",salary.shape)
